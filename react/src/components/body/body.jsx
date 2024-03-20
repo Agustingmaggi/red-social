@@ -10,7 +10,7 @@ const Body = () => {
   });
 
   useEffect(() => {
-    fetch("https://pokeapi.co/api/v2/pokemon/ditto")
+    fetch("http://localhost:8000/api/usuarios")
       .then((response) => response.json())
       .then((info) => setData(info.data));
   }, []);
@@ -18,7 +18,7 @@ const Body = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch("https://pokeapi.co/api/v2/pokemon/ditto", {
+    fetch("http://localhost:8000/api/usuarios/nuevotweet", {
       method: "POST",
       body: JSON.stringify(formData),
       headers: {
