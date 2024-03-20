@@ -10,7 +10,7 @@ const Body = () => {
   });
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/usuarios")
+    fetch("https://pokeapi.co/api/v2/pokemon/ditto")
       .then((response) => response.json())
       .then((info) => setData(info.data));
   }, []);
