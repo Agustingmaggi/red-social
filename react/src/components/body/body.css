@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     color: white;
-    background-color: black;
+    background-color: rgb(21, 32, 43);
 }
 
 .grilla {
@@ -19,23 +19,32 @@
 
 .header {
     grid-area: header;
-    background-color: red;
+    /* background-color: red; */
+    padding: 10px;
+    border: 1px solid white;
+    margin-left: 10px;
+    margin-right: 10px
 }
 
 .barra-nav {
     grid-area: nav;
-    background-color: orange;
+    /* background-color: orange; */
     max-height: 400px;
 }
 
 .contenido {
     grid-area: contenido;
-    background-color: green;
+    /* background-color: green; */
+    padding: 10px;
+    border: 1px solid white;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px
 }
 
 .side {
     grid-area: side;
-    background-color: violet;
+    /* background-color: violet; */
     max-height: 40%;
 }
 
