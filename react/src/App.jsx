@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Body from './components/body/body.jsx'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
