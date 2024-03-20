@@ -18,7 +18,7 @@ const Body = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch("http://localhost:8000/api/usuarios/nuevotweet", {
+    fetch("https://pokeapi.co/api/v2/pokemon/ditto", {
       method: "POST",
       body: JSON.stringify(formData),
       headers: {
