@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+}
+
+.grilla {
+    display: grid;
+    grid-template-areas:
+        "nav header header side"
+        "nav contenido contenido side"
+        "nav contenido contenido side";
+    grid-template-columns: 10% auto auto 15%;
+    grid-template-rows: 20% auto auto;
+    margin: 5% 10% 0 10%
+}
+
+.header {
+    grid-area: header;
+    background-color: red;
+}
+
+.barra-nav {
+    grid-area: nav;
+    background-color: orange;
+    max-height: 400px;
+}
+
+.contenido {
+    grid-area: contenido;
+    background-color: green;
+}
+
+.side {
+    grid-area: side;
+    background-color: violet;
+    max-height: 40%;
+}
+
+.contenido2 {
+    color: blue;
+}
+
+.apii {
+    background-color: blue;
+}

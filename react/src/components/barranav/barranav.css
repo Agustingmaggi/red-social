@@ -1,0 +1,8 @@
+.barra-navegacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    border: solid 1px white;
+}

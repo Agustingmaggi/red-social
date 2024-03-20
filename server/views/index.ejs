@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    a ver ahora
+  
+    <ul>
+      <% for (let i = 0; i < data.length; i++) { %>
+        <li>
+          <% if (data[i].nombre_usuario) { %>
+            Nombre: <%= data[i].nombre_usuario %><br><br>
+            Tweet: <%= data[i].tweet %>
+          <% } %>
+        </li> <!-- Move the closing </li> tag inside the loop -->
+      <% } %>
+    </ul> <!-- Move the closing </ul> tag outside the loop -->
+  </body>
+</html>
